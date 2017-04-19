@@ -41,6 +41,11 @@ Dillinger uses a number of open source projects to work properly:
 * [AYLIEN Intelligence] - AYLIEN Text Analysis API is a package of Natural Language Processing, Information Retrieval and Machine Learning tools for extracting meaning and insight from textual and visual content with ease.
 * [jQuery] - A Lightweight Javascript Framework
 
+## Screenshots
+![alt tag](https://raw.githubusercontent.com/fosshack/News-Vibe/master/1.png)
+![alt tag](https://raw.githubusercontent.com/fosshack/News-Vibe/master/2.png)
+![alt tag](https://raw.githubusercontent.com/fosshack/News-Vibe/master/3.png)
+![alt tag](https://raw.githubusercontent.com/fosshack/News-Vibe/master/4.png)
 
 
 **Free Software, Hell Yeah!**
@@ -60,5 +65,4 @@ Dillinger uses a number of open source projects to work properly:
    [express]: <http://expressjs.com>
    [AngularJS]: <http://angularjs.org>
    [Gulp]: <http://gulpjs.com>
-
 
