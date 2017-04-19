@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+
+
+<div class="container-fluid" style="background-image:url('{{nobj.urlToImage}}');background-size:cover;height:400px;">
+</div>
+<div class="container">
+<div class="row">
+  <div class="col-md-10">
+  <h2>{{ aobj.title }}</h2>{{ nobj.label }} NEWS
+
+
+
+
+</div>
+<div class="col-md-10" style="text-align:justify;">
+  <br /><br />
+    <div class="row" style="text-align:center;">
+    <div class="col-md-2">
+      <img src="http://emojione.com/wp-content/uploads/assets/emojis/1f600.svg" width="40px"><br />
+      {{ nobj.positive }}<br />Positive
+    </div>
+    <div class="col-md-2">
+      <img src="http://emojione.com/wp-content/uploads/assets/emojis/1f61e.svg" width="40px"><br />
+      {{ nobj.negative }}<br />Negative
+    </div>
+    <div class="col-md-2">
+      <img src="http://emojione.com/wp-content/uploads/assets/emojis/1f610.svg" width="40px"><br />
+      {{ nobj.neutral }}<br />Neutral
+    </div>
+    <div class="col-md-2">
+      <img src="http://emojione.com/wp-content/uploads/assets/emojis/1f621.svg" width="40px"><br />
+      {{ nobj.anger }}<br />Anger
+    </div>
+    <div class="col-md-2">
+      <img src="http://emojione.com/wp-content/uploads/assets/emojis/1f60c.svg" width="40px"><br />
+      {{ nobj.calm }}<br />Calm
+    </div>
+    <div class="col-md-2">
+      <img src="http://emojione.com/wp-content/uploads/assets/emojis/1f924.svg" width="40px"><br />
+      {{ nobj.fear }}<br />Fear
+    </div>
+
+    </div>
+  <br /><br />
+  {{ aobj.text }}
+    <br /><br />  <br /><br />  <br /><br />
+
+  </div>
+
+  <div class="col-md-2" style="text-align:center;">
+
+
+  <a href='{{ nobj.url }}'><button class="btn btn-primary"type="button" name="button">source article</button></a><br />
+
+  <br/>
+
+<h2>Related articles</h2>
+  <br/>
+  <div class="row">
+    {% for i in rel_list %}
+    <div class="col-sm-12" style="text-align:left;">
+      <a  href="{{ i.1 }}">{{ i.0 }}</a><br /><br />
+</div>
+{% endfor %}
+</div>
+  <!--anger:  <br/>
+  calm: {{ nobj.calm }} <br/>
+  fear:  <br/>
+  happy: {{ nobj.happy }} <br/>
+  like: {{ nobj.like }} <br/>
+  shame: {{ nobj.shame }} <br/>
+  sure: {{ nobj.sure }} <br/>
+  surprise: {{ nobj.surprise }} <br/> -->
+
+
+  </div>
+
+</div>
+
+</div>
+{% endblock %}

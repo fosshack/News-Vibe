@@ -1,0 +1,54 @@
+
+
+{% block content %}
+  <h2>Homepage</h2>
+  <p>Hello {{ user.username }}!</p>
+
+
+
+<div class="container-fluid">
+  <div class="container">
+  <div class="row">
+  
+   <h2>Goto Get bootstrap for Files </h2>
+  
+  <h3>Malayala Manorama</h3>
+  {% for obj in d.entries %}
+  <ul>
+    <li>
+      <h5>{{ obj.title }}</h5>
+      <a href='{{ obj.link }}'>{{ obj.link }}</a><br/>
+    </li>
+  </ul>
+  {% endfor %}
+  
+  
+  
+  <h3>Matrubhumi</h3>
+  {% for obj in a.entries %}
+  <ul>
+    <li>
+      <h5>{{ obj.title }}</h5>
+      <a href='{{ obj.link }}'>{{ obj.link }}</a><br/>
+    </li>
+  </ul>
+  {% endfor %}
+  
+
+  
+  <h3>Madhyamam</h3>
+  {% for obj in b.entries %}
+  <ul >
+    <li >
+      <h5>{{ obj.title }}</h5>
+      <a href='{{ obj.link }}'>{{ obj.link }}</a><br/>
+    </li>
+  </ul>
+  {% endfor %}
+  
+</div>
+</div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<style>
+.formcover
+{
+  background-color: white;
+  padding-top:30px;
+  border-radius: 4px;
+  padding-bottom: 30px;
+  max-width: 320px;
+  min-height: 300px;
+}
+#formbottom
+{
+  background-color:#3ba4d5;
+}
+#id_username,#id_password
+{
+  border-radius: 4px;
+  border: 1px solid grey;
+  margin-bottom: 10px;
+}
+#id_username:focus,#id_password:focus
+{
+  border: 1px solid#3ba4d5;
+}
+</style>
+<div class="container-fluid" style="padding-top50px;">
+
+  <div style="width:100%;" class="animation">
+    <br /><br />
+    <img src="{% static "images/cloud.png" %}" alt="" width="200px" style="position:absolute;left:50%;" class="cloud">
+
+  <img src="{% static "images/bird.png" %}" alt="" class="bird" style="position:absolute;left:200px;"><br /><br /><br /><br /><img src="{% static "images/cloud.png" %}" alt="" width="100px" style="position:absolute;left:100%;" class="cloud1">
+  <img src="{% static "images/bird.png" %}" alt="" class="bird1" style="position:absolute;left:300px;" width="80px"><br /><br />
+  <img src="{% static "images/bird.png" %}" alt="" class="bird2" style="position:absolute;left:100px;" width="50px">
+  <img src="{% static "images/cloud.png" %}" alt="" width="150px" style="position:absolute;left:180%;" class="cloud2"><img src="{% static "images/cloud.png" %}" alt="" width="80px" style="position:absolute;left:180%;" class="cloud3">
+  <br /><br /><br /><br /><br /><br />
+  </div>
+<div class="row">
+<div class="col-sm-3">
+</div>
+<div class="col-sm-6" style="text-align:center;">
+<center>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+  </form>
+  <br>
+
+</center>
+</div>
+</div>
+</div>
+<div class="container-fluid" id="formbottom" style="color:white;">
+  <br>
+  <center>
+    <p><strong>-- OR --</strong></p>
+    <a href="{% url 'social:begin' 'github' %}"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="" width="60px"></a><br>Login with Github
+
+
+  </center>
+
+  <br><br><br><br>  <br><br><br><br>  <br><br><br><br>
+</div>
+<script type="text/javascript">
+function animateb()
+{
+$('.bird').animate({left: 0},0);
+$('.bird').animate({left:'100%'},11000,"linear");
+}
+function animateb1()
+{
+$('.bird1').animate({left: 0},0);
+$('.bird1').animate({left:'100%'},9000,"linear")
+}
+function animateb2()
+{
+$('.bird2').animate({left: 0},0);
+$('.bird2').animate({left:'100%'},10000,"linear")
+}
+function animatec()
+{
+$('.cloud').animate({left: "100%"},0);
+$('.cloud').animate({left:'-20%'},18000,"linear")
+}
+function animatec1()
+{
+$('.cloud1').animate({left: "100%"},0);
+$('.cloud1').animate({left:'-20%'},16000,"linear")
+}
+
+function animatec2()
+{
+$('.cloud2').animate({left: "100%"},0);
+$('.cloud2').animate({left:'-20%'},15000,"linear")
+}
+
+function animatec3()
+{
+$('.cloud3').animate({left: "100%"},0);
+$('.cloud3').animate({left:'-20%'},10000,"linear")
+}
+
+animateb();
+animateb1();
+animateb2();
+$('.cloud').animate({left:'-20%'},18000,"linear")
+$('.cloud1').animate({left:'-20%'},16000,"linear")
+$('.cloud2').animate({left:'-20%'},15000,"linear")
+$('.cloud3').animate({left:'-20%'},10000,"linear")
+
+setInterval("animateb()",11000);
+setInterval("animateb1()",9000);
+setInterval("animateb2()",10000);
+setInterval("animatec()",18000);
+setInterval("animatec1()",18000);
+setInterval("animatec2()",14000);
+setInterval("animatec3()",10000);
+</script>
+
+
+{% endblock %}

@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid shuffler shadowin boxshadowout">
+<div class="row" style="padding:6vw;padding-top:50px;">
+<!----paperbox---->
+{% for i in queryset %}
+<div class="col-md-2 poperbox">
+  <div class="row" style="border:1px solid white;border-radius:3px;">
+    <div class="col-md-12" style="padding:0;">
+      <a href="{{ request.scheme }}://{{request.get_host}}/article/{{i.slug}}/"><div class="stats">
+          <h4>Read More</h4>
+            <span style="color:red;font-size:40px;" class="glyphicon glyphicon-heart"></span><br />
+            {{ i.positive }}
+            {{ i.slug }}
+      </div></a>
+    </div>
+
+    <div>
+      <div class="col-md-12" style="padding:0;height:100px;background-image:url('{{ i.urlToImage }}');background-size:cover;">
+
+    </div>
+
+    <div class="col-md-12 titlepad">
+        <h4 style="font-weight:bold;" class="text">{{ i.title }}</h4>
+    </div>
+    <div class="col-md-12 newsdot text">
+      {{ i.description }}
+      </div>
+    </div>
+    </div>
+
+</div>
+{% endfor %}
+</div>
+</div>
+<div style="width:100%;" class="animation">
+  <br /><br />
+  <img src="{% static "images/cloud.png" %}" alt="" width="200px" style="position:absolute;left:50%;" class="cloud">
+
+<img src="{% static "images/bird.png" %}" alt="" class="bird" style="position:absolute;left:200px;"><br /><br /><br /><br /><img src="{% static "images/cloud.png" %}" alt="" width="100px" style="position:absolute;left:100%;" class="cloud1">
+<img src="{% static "images/bird.png" %}" alt="" class="bird1" style="position:absolute;left:300px;" width="80px"><br /><br />
+<img src="{% static "images/bird.png" %}" alt="" class="bird2" style="position:absolute;left:100px;" width="50px">
+<img src="{% static "images/cloud.png" %}" alt="" width="150px" style="position:absolute;left:180%;" class="cloud2"><img src="{% static "images/cloud.png" %}" alt="" width="80px" style="position:absolute;left:180%;" class="cloud3">
+<br /><br /><br /><br /><br /><br />
+</div>
+<div class="container">
+
+<center>
+  <h1>Welcome to <b>NewsVibe</b>!!</h1>
+  <br /><br />
+  <form class="navbar-form" role="search" >
+    Search anything happening around you!<br />
+    <div class="input-group add-on">
+
+      <input class="form-control " placeholder="Search" name="srch-term" id="srch-term" type="text" style="min-width:40vw;">
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
+</center>
+<br /><br /><br /><br /><br />
+</div>
+
+<script type="text/javascript">
+function animateb()
+{
+$('.bird').animate({left: 0},0);
+$('.bird').animate({left:'100%'},11000,"linear");
+}
+function animateb1()
+{
+$('.bird1').animate({left: 0},0);
+$('.bird1').animate({left:'100%'},9000,"linear")
+}
+function animateb2()
+{
+$('.bird2').animate({left: 0},0);
+$('.bird2').animate({left:'100%'},10000,"linear")
+}
+function animatec()
+{
+$('.cloud').animate({left: "100%"},0);
+$('.cloud').animate({left:'-20%'},18000,"linear")
+}
+function animatec1()
+{
+$('.cloud1').animate({left: "100%"},0);
+$('.cloud1').animate({left:'-20%'},16000,"linear")
+}
+
+function animatec2()
+{
+$('.cloud2').animate({left: "100%"},0);
+$('.cloud2').animate({left:'-20%'},15000,"linear")
+}
+
+function animatec3()
+{
+$('.cloud3').animate({left: "100%"},0);
+$('.cloud3').animate({left:'-20%'},10000,"linear")
+}
+
+animateb();
+animateb1();
+animateb2();
+$('.cloud').animate({left:'-20%'},18000,"linear")
+$('.cloud1').animate({left:'-20%'},16000,"linear")
+$('.cloud2').animate({left:'-20%'},15000,"linear")
+$('.cloud3').animate({left:'-20%'},10000,"linear")
+
+setInterval("animateb()",11000);
+setInterval("animateb1()",9000);
+setInterval("animateb2()",10000);
+setInterval("animatec()",18000);
+setInterval("animatec1()",18000);
+setInterval("animatec2()",14000);
+setInterval("animatec3()",10000);
+</script>
+<script type="text/javascript">
+
+
+</script>
+{% endblock %}
