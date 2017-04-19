@@ -50,7 +50,7 @@ Dillinger uses a number of open source projects to work properly:
 ![alt tag](https://raw.githubusercontent.com/fosshack/News-Vibe/master/2.png)
 ![alt tag](https://raw.githubusercontent.com/fosshack/News-Vibe/master/3.png)
 ![alt tag](https://raw.githubusercontent.com/fosshack/News-Vibe/master/4.png)
-![alt tag](https://raw.githubusercontent.com/fosshack/News-Vibe/master/5.png)
+![alt tag](https://raw.githubusercontent.com/fosshack/News-Vibe/master/8.png)
 
 
 
