@@ -28,7 +28,11 @@
 >By Networking
 >Through Advertising
 
-
+### Contributors 
+* Kiran Varghese (@kirantechnicals)
+* Mohammed Farhan (@farhankn)
+* Nadish Shajahan (@nadishs)
+* S Vaisakh (@vaisakhsasikumar)
 
 ### Tech
 
@@ -36,7 +40,7 @@ Dillinger uses a number of open source projects to work properly:
 
 * [Python Django] - Python Framework!
 * [Atom Editor] - awesome web-based text editor
-* [GitKraken] - Markdown parser done right. Fast and easy to extend.
+* [Git] - Markdown parser done right. Fast and easy to extend.
 * [Twitter Bootstrap] - great UI boilerplate for modern web apps
 * [AYLIEN Intelligence] - AYLIEN Text Analysis API is a package of Natural Language Processing, Information Retrieval and Machine Learning tools for extracting meaning and insight from textual and visual content with ease.
 * [jQuery] - A Lightweight Javascript Framework
