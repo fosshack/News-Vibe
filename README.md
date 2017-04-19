@@ -7,7 +7,7 @@
 
   ###### The Solution displays the real time news to the users with extensive analysis report of the news in addition to other services.
 
-[Link to the original Repo](https://github.com/kirantechnicals/projectfosshack)
+[Link to the Original Repo](https://github.com/kirantechnicals/projectfosshack)
  
 # New Features!
 
