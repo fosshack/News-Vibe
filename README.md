@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-# projectfosshack
-# farhan
-# naduPottan
-# kiranK
-# vsk
-=======
 # News-Vibe
 
 
@@ -22,8 +15,6 @@
 - A Chrome Extension that determines a Clickbait Article and eliminates it from the search results to improve the user experience.
 - Summary Generator which reads the news to users (beta)
 - Personalised Localised News Delivery (Regional Languages)
-
-
 
 
 
@@ -77,4 +68,3 @@ Dillinger uses a number of open source projects to work properly:
    [AngularJS]: <http://angularjs.org>
    [Gulp]: <http://gulpjs.com>
 
->>>>>>> 18e5f04d943e284798ffa1b1315acbae94e5e6be
