@@ -8,7 +8,7 @@ MarkupSafe==1.0
 PIL==1.1.7
 PyJWT==1.4.2
 PyYAML==3.11
-Pyro==3.14
+Pyro==3.15
 SOAPpy==0.12.0
 ScientificPython==2.8
 Unirest==1.1.7
