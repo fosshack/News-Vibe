@@ -7,7 +7,7 @@ Jinja2==2.9.6
 MarkupSafe==1.0
 PIL==1.1.7
 PyJWT==1.4.2
-PyYAML==3.11
+PyYAML==5.1
 Pyro==3.14
 SOAPpy==0.12.0
 ScientificPython==2.8
