@@ -79,7 +79,7 @@ pytz==2012c
 pyxdg==0.26
 reportbug==6.4.4
 reportlab==2.5
-requests==2.13.0
+requests==2.20.0
 requests-oauthlib==0.8.0
 rubber==1.1
 simplejson==2.5.2
