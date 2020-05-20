@@ -47,7 +47,7 @@ gevent==1.2.1
 greenlet==0.4.12
 grpc==0.3-19
 grpcio==1.2.1
-httplib2==0.10.3
+httplib2==0.18.0
 isort==4.2.5
 itsdangerous==0.24
 joblib==0.6.4
