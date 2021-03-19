@@ -3,7 +3,7 @@ Brlapi==0.5.7
 Django==1.11
 GeoIP-Python==1.2.4
 GnuPGInterface==0.3.2
-Jinja2==2.9.6
+Jinja2==2.11.3
 MarkupSafe==1.0
 PIL==1.1.7
 PyJWT==1.4.2
