@@ -1,6 +1,6 @@
 BeautifulSoup==3.2.1
 Brlapi==0.5.7
-Django==1.11
+Django==2.2.24
 GeoIP-Python==1.2.4
 GnuPGInterface==0.3.2
 Jinja2==2.9.6
