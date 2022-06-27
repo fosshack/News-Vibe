@@ -78,7 +78,7 @@ pyttsx==1.1
 pytz==2012c
 pyxdg==0.26
 reportbug==6.4.4
-reportlab==2.5
+reportlab==3.5.55
 requests==2.13.0
 requests-oauthlib==0.8.0
 rubber==1.1
