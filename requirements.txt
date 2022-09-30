@@ -50,7 +50,7 @@ grpcio==1.2.1
 httplib2==0.10.3
 isort==4.2.5
 itsdangerous==0.24
-joblib==0.6.4
+joblib==1.2.0
 kombu==2.1.8
 lazy-object-proxy==1.2.2
 louis==2.4.1
